@@ -1,0 +1,1527 @@
+[18:53:16] [INFO] Loaded script server_scripts:custom_recipes.js in 0.002 s
+[18:53:16] [ERROR] ! function log(message, level = 'INFO') {#13: dev.latvian.mods.rhino.EvaluatorException: missing ) after formal parameters
+[18:53:16] [ERROR] ! …rhino.EvaluatorException: missing ) after formal parameters (server_scripts:diagnose_skinnedlanterns.js#13)
+[18:53:16] [ERROR] !   at …rhino.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:67)
+[18:53:16] [ERROR] !   at …rhino.DefaultErrorReporter.error(DefaultErrorReporter.java:58)
+[18:53:16] [ERROR] !   at …rhino.Parser.addError(Parser.java:281)
+[18:53:16] [ERROR] !   at …rhino.Parser.reportError(Parser.java:335)
+[18:53:16] [ERROR] !   at …rhino.Parser.reportError(Parser.java:331)
+[18:53:16] [ERROR] !   at …rhino.Parser.mustMatchToken(Parser.java:446)
+[18:53:16] [ERROR] !   at …rhino.Parser.mustMatchToken(Parser.java:439)
+[18:53:16] [ERROR] !   at …rhino.Parser.parseFunctionParams(Parser.java:770)
+[18:53:16] [ERROR] !   at …rhino.Parser.function(Parser.java:829)
+[18:53:16] [ERROR] !   at …rhino.Parser.function(Parser.java:776)
+[18:53:16] [ERROR] !   at …rhino.Parser.parse(Parser.java:576)
+[18:53:16] [ERROR] !   at …rhino.Parser.parse(Parser.java:532)
+[18:53:16] [ERROR] !   at …rhino.Context.parse(Context.java:922)
+[18:53:16] [ERROR] !   at …rhino.Context.compileImpl(Context.java:884)
+[18:53:16] [ERROR] !   at …rhino.Context.compileString(Context.java:545)
+[18:53:16] [ERROR] !   at …rhino.Context.compileString(Context.java:540)
+[18:53:16] [ERROR] !   at …rhino.Context.evaluateString(Context.java:462)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptFile.load(ScriptFile.java:71)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptManager.load(ScriptManager.java:183)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptManager.reload(ScriptManager.java:68)
+[18:53:16] [ERROR] !   at …kubejs.server.ServerScriptManager.reload(ServerScriptManager.java:231)
+[18:53:16] [ERROR] !   at …kubejs.server.ServerScriptManager.createPackResources(ServerScriptManager.java:68)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader$PackConfig.modifyExpressionValue$eob000$kubejs$kjs$getPackResources(WorldLoader.java:516)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader$PackConfig.createResourceManager(WorldLoader.java:102)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader.load(WorldLoader.java:32)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:200)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:16] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:16] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:16] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:16] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:16] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:16] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:16] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:16] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:16] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:16] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:16] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:16] [INFO] server_scripts:difficulty_scaling.js#42: ✅ [difficulty_plus] 动态难度+GUI 版已加载
+[18:53:16] [INFO] server_scripts:difficulty_scaling.js#490: ✅ [difficulty_plus] 全部功能加载完成！试试 /diffgui 或 /diffhelp
+[18:53:16] [INFO] Loaded script server_scripts:difficulty_scaling.js in 0.019 s
+[18:53:16] [INFO] Loaded script server_scripts:exported_recipes.js in 0.002 s
+[18:53:16] [INFO] server_scripts:fix_skinnedlanterns_recipe.js#4: 🔧 [修复] 开始加载增强版skinnedlanterns配方修复脚本...
+[18:53:16] [ERROR] ! fix_skinnedlanterns_recipe.js#91: dev.latvian.mods.rhino.EvaluatorException: Can't find method dev.latvian.mods.rhino.CachedClassInfo.error(string,object).
+[18:53:16] [ERROR] ! …rhino.EvaluatorException: Can't find method …rhino.CachedClassInfo.error(string,object). (server_scripts:fix_skinnedlanterns_recipe.js#91)
+[18:53:16] [ERROR] !   at …rhino.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:67)
+[18:53:16] [ERROR] !   at …rhino.Context.reportRuntimeError(Context.java:93)
+[18:53:16] [ERROR] !   at …rhino.Context.reportRuntimeError(Context.java:133)
+[18:53:16] [ERROR] !   at …rhino.Context.reportRuntimeError1(Context.java:105)
+[18:53:16] [ERROR] !   at …rhino.NativeJavaMethod.call(NativeJavaMethod.java:341)
+[18:53:16] [ERROR] !   at …rhino.Interpreter.interpretLoop(Interpreter.java:988)
+[18:53:16] [ERROR] !   at script(server_scripts:fix_skinnedlanterns_recipe.js:91)
+[18:53:16] [ERROR] !   at script(server_scripts:fix_skinnedlanterns_recipe.js:2)
+[18:53:16] [ERROR] !   at …rhino.Interpreter.interpret(Interpreter.java:372)
+[18:53:16] [ERROR] !   at …rhino.InterpretedFunction.call(InterpretedFunction.java:72)
+[18:53:16] [ERROR] !   at …rhino.Context.callSync(Context.java:1142)
+[18:53:16] [ERROR] !   at …rhino.Context.doTopCall(Context.java:1159)
+[18:53:16] [ERROR] !   at …rhino.InterpretedFunction.exec(InterpretedFunction.java:83)
+[18:53:16] [ERROR] !   at …rhino.Context.evaluateString(Context.java:464)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptFile.load(ScriptFile.java:71)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptManager.load(ScriptManager.java:183)
+[18:53:16] [ERROR] !   at …kubejs.script.ScriptManager.reload(ScriptManager.java:68)
+[18:53:16] [ERROR] !   at …kubejs.server.ServerScriptManager.reload(ServerScriptManager.java:231)
+[18:53:16] [ERROR] !   at …kubejs.server.ServerScriptManager.createPackResources(ServerScriptManager.java:68)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader$PackConfig.modifyExpressionValue$eob000$kubejs$kjs$getPackResources(WorldLoader.java:516)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader$PackConfig.createResourceManager(WorldLoader.java:102)
+[18:53:16] [ERROR] !   at net.minecraft.server.WorldLoader.load(WorldLoader.java:32)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:200)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:16] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:16] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:16] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:16] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:16] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:16] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:16] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:16] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:16] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:16] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:16] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:16] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:16] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:16] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:16] [INFO] server_scripts:tower_scaling.js#1362: §6✅ [爬塔系统] 已成功加载！使用 /tower 命令开始爬塔挑战。
+[18:53:16] [INFO] Loaded script server_scripts:tower_scaling.js in 0.019 s
+[18:53:16] [INFO] Loaded 5/7 KubeJS server scripts in 0.171 s with 2 errors and 0 warnings
+[18:53:20] [INFO] Loaded Java class 'com.mojang.brigadier.arguments.StringArgumentType'
+[18:53:20] [INFO] Loaded Java class 'com.mojang.brigadier.arguments.DoubleArgumentType'
+[18:53:20] [INFO] Loaded Java class 'net.minecraft.network.chat.Component'
+[18:53:20] [INFO] Loaded Java class 'net.minecraft.network.chat.ClickEvent'
+[18:53:20] [INFO] Loaded Java class 'net.minecraft.network.chat.HoverEvent'
+[18:53:21] [INFO] Processing recipes...
+[18:53:21] [INFO] Initializing recipe event...
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/cloche/tomato, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/iridium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/steel/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/nickel/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/shard/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe woodster:pale_oak_chiseled_bookshelf, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/aluminum/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/materials/allthemodium, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/platinum/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lumium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/constantan/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/cinnabar/gem, conditions not met
+[18:53:21] [INFO] Skipping recipe casualness_delight:cutting/diced_potatoes, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/materials/vibranium, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/bronze/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/sapphire/gem, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_beetroots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/uranium/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/salt/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/electrum/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/sapphire/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/steel/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/aluminum/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dust/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/constantan/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/iridium/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/nickel/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe casualness_delight:crafting_shaped/hamburger_with_cheese, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/netherite/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/constantan/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/enderium/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe apotheosis:gateways/tiered/frontier, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read base:ingredient from recipe codex_of_champions:blossom_cloak_hood[minecraft:smithing_transform]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'codex_of_champions:blossom_cloak_hood[minecraft:smithing_transform]'! Falling back to vanilla: Recipe component key 'base' not found! Valid keys: [base:ingredient, result:item_stack, addition:ingredient, template:ingredient]
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/constantan/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_hoe, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/bronze/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/lead/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/lead/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/poison, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/unobtainium_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/invar/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/uranium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/cinnabar/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/invar/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/zinc/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/osmium/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/alchemy_bench_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/osmium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/unobtainium/unobtainium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/copper/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/constantan/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/clump/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/aluminum/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/ruby/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/osmium/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lumium/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/invar/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/lead/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/bronze/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_axe, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/vibranium_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/lead/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/cloche/onion, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/iridium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/ruby/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/zinc/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/peridot/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/iridium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_chestplate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/brass/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/clump/from_ore, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe irons_restrictions:wind_manuscript[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'irons_restrictions:wind_manuscript[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/iridium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/slurry/dirty/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/slurry/clean, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/aluminum/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/electrum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/nickel/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/peridot/gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/tin/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iridium/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dust/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/salt/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/lumium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/gold/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/aluminum/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/electrum_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/iridium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_sword, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/brass_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/silver/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/invar/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/iridium/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/tin/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/silentgear/cutting/netherwood, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/electrum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/uranium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/netherite/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/fluorite/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/brass/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/netherite/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/signalum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/fluorite/dust/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/aluminum/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/tin/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/platinum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/diamond/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/bronze/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/signalum/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lumium/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lead/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/aluminum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lumium/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/bronze/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_tomatoes, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/ruby/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/nickel/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_shovel, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/bronze/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/nickel/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/brass/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/allthemodium_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_leggings, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/uranium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/brass/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/silver/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/iridium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/lead/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/copper/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe corn_delight:bacon_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_pick, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/copper/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/zinc/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_carrots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_sword, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/vibranium/vibranium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/enderium_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_axe, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:sawmill/sawmill_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_gear, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe irons_restrictions:spirit_manuscript[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'irons_restrictions:spirit_manuscript[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/gold/gear, conditions not met
+[18:53:21] [WARN] Skipping recipe allthemodium:ars_compat/allthemodium_source_jar, unknown type: ars_nouveau:enchanting_apparatus
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/uranium/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/copper/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/platinum/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_rice, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/aluminum/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/enderium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/brass/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/enderium/plate, conditions not met
+[18:53:21] [WARN] Skipping recipe brewinandchewin:fermenting/ghast_sourdough, unknown type: brewinandchewin:fermenting
+[18:53:21] [INFO] Skipping recipe alltheores:processing/netherite/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/frosted, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_carrots, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/clump/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/nickel/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/lead/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/rice_panicle, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/electrum/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/aluminum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/enderium/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/constantan/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/allthemodium/allthemodium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/invar_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/constantan/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/signalum/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/invar/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/ruby/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/iridium/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/salt/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/diamond/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe woodster:pale_oak_ladder, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/uranium/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/copper/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/carpenters_table_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/filling/chocolate_pie, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/tin/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_axe, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/enderium/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/steel/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/platinum/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/rice_panicle, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_cabbages, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/invar/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/constantan/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/zinc/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/zinc/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/hunger, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/shard/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/iron/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/mixing/tomato_sauce_from_mixing, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/brass/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/steel/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/enderium/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/netherite/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lumium/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe moredelight:toast_with_blueberries, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/sapphire/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/zinc/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iron/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/osmium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/electrum/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/platinum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/iridium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/signalum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/nickel/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/vibranium/vibranium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/ruby/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_potatoes, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/tin/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:toast_with_peanut_butter, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/osmium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/uranium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe apotheosis:gateways/tiered/ascent, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_shovel, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/slurry/dirty/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/squeezer/cabbage_seeds, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/lumium/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iron/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/allthemodium_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_sword, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/signalum/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iron/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/materials/unobtainium, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/steel/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/tin/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/squeezer/tomato_seeds, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/brass/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/brass/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/invar/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/slurry/from_dirty, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe irons_restrictions:dune_manuscript[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'irons_restrictions:dune_manuscript[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iron/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/zinc/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/sapphire/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/platinum/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:hamburger_with_cheese, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/signalum/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/uranium/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/osmium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/uranium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/resistance, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/clump/from_shard, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe irons_restrictions:sound_manuscript[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'irons_restrictions:sound_manuscript[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/brass/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/osmium/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/osmium/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/sapphire/dust/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iron/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/silver/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/invar/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/osmium/from_dust, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read base:ingredient from recipe codex_of_champions:blossom_cloak_robes[minecraft:smithing_transform]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'codex_of_champions:blossom_cloak_robes[minecraft:smithing_transform]'! Falling back to vanilla: Recipe component key 'base' not found! Valid keys: [base:ingredient, addition:ingredient, template:ingredient, result:item_stack]
+[18:53:21] [INFO] Skipping recipe allthemodium:alloys/molten_vibunob, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/tin/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/lumium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/sulfur/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/iridium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dust/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/silver/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/fuel/soullava, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/constantan_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/lead/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/sapphire/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:peanut_butter_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_pick, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/glassblower_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:alloys/molten_atmvib, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/copper/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/diamond/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/tin/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/slurry/dirty/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/copper/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/constantan/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/tin/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/copper/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/steel/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/platinum/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/fermenter/tomato, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/sulfur/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/invar/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/gold/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/diamond/plate, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe spellelemental:fire_sword_oil[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'spellelemental:fire_sword_oil[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/signalum/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/electrum/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/steel/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_shovel, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/gold/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/brass/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/tin/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/signalum/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/fluorite/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/nickel/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/vibranium_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/ruby/dust/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/steel/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/steel/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/unobtainium/unobtainium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_hoe, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/electrum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:cheese_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iron/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/bronze/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/osmium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/ruby/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/silver/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/enderium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/gold/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_helmet, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/ruby/gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/silver/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/silver/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/aluminum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/zinc/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/fluorite/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/nickel/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/cinnabar/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/electrum/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/brass/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/osmium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/fluorite/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/platinum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/electrum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/cinnabar/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/invar/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/cinnabar/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:glow_berry_jelly_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/osmium/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/platinum/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/unobtainium/unobtainium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/uranium/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/invar/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/diamond/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lumium/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_cabbages, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iron/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/sulfur/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/bronze/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/uranium/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/silver/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/osmium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_boots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/loom_table_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_leggings, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/peridot/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/unobtainium_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/cinnabar/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/lead/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/lumium_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/diamond/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/copper/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/osmium/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/bronze/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lumium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/tinkering_table_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/peridot/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lead/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/silver/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/lead/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/invar/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/shard/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/tin/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/brass/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/constantan/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/platinum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:chemical_conversion/sulfur_block_to_sulfuric_acid, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/gold/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/botanist_workbench_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/brass/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/ruby/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/electrum/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/alloys/unobtainium_allthemodium_alloy_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/nickel/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/clump/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/bronze/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:toast_with_cheese, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/uranium/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/silver/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/cinnabar/dust/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/cinnabar/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_potatoes, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/nickel/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/osmium/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe apotheosis:gateways/tiered/pinnacle, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_chestplate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/bronze/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/silver/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lumium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/clump/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/milling/wild_onions, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/mixing/pie_crust_from_mixing, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_rice, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/tin/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/nickel/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/platinum/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/peridot/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/aluminum/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/tin/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/nickel/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_boots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/netherite/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/gold/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/vibranium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/electrum/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/platinum/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/diamond/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/enderium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/steel/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/allthemodium/allthemodium_from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/sapphire/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_boots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/allthemodium_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/steel/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/tin/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_hoe, conditions not met
+[18:53:21] [ERROR] ! RegistryAccessContainer.java#150: Failed to read result:strict_item_stack from recipe irons_restrictions:symmetry_manuscript[minecraft:crafting_shaped]: java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] ! java.util.NoSuchElementException: No value present
+[18:53:21] [ERROR] !   at java.util.Optional.orElseThrow(Optional.java:377)
+[18:53:21] [ERROR] !   at …kubejs.util.RegistryAccessContainer.decodeJson(RegistryAccessContainer.java:150)
+[18:53:21] [ERROR] !   at …kubejs.recipe.component.RecipeComponent.readFromJson(RecipeComponent.java:139)
+[18:53:21] [ERROR] !   at …kubejs.recipe.KubeRecipe.deserialize(KubeRecipe.java:78)
+[18:53:21] [ERROR] !   at …kubejs.recipe.schema.RecipeSchema.deserialize(RecipeSchema.java:255)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.parseOriginalRecipe(RecipesKubeEvent.java:241)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.discoverRecipes(RecipesKubeEvent.java:219)
+[18:53:21] [ERROR] !   at …kubejs.recipe.RecipesKubeEvent.post(RecipesKubeEvent.java:179)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.handler$enj000$kubejs$customRecipesHead(RecipeManager.java:3077)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java)
+[18:53:21] [ERROR] !   at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:36)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:19)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+[18:53:21] [ERROR] !   at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+[18:53:21] [ERROR] !   at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.managedBlock(Minecraft.java:4018)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:201)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:142)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelStem(WorldOpenFlows.java:346)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldCheckVersionCompatibility(WorldOpenFlows.java:335)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorldLoadLevelData(WorldOpenFlows.java:297)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.openWorld(WorldOpenFlows.java:261)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:498)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:481)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:315)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:95)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98)
+[18:53:21] [ERROR] !   at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+[18:53:21] [ERROR] !   at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:162)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.runTick(Minecraft.java:1220)
+[18:53:21] [ERROR] !   at net.minecraft.client.Minecraft.run(Minecraft.java:807)
+[18:53:21] [ERROR] !   at net.minecraft.client.main.Main.main(Main.java:230)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/fml_loader@4.0.41/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[18:53:21] [ERROR] !   at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+[18:53:21] [ERROR] !   at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+[18:53:21] [ERROR] !   at java.lang.reflect.Method.invoke(Method.java:580)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+[18:53:21] [ERROR] !   at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+[18:53:21] [WARN] KubeRecipe.java#88: Failed to parse recipe 'irons_restrictions:symmetry_manuscript[minecraft:crafting_shaped]'! Falling back to vanilla: Recipe component key 'result' not found! Valid keys: [result:strict_item_stack, kubejs:mirror?:boolean, category?:crafting_book_category, key:pattern<ingredient>, pattern:string_grid, kubejs:shrink?:boolean]
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/netherite/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/uranium/raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/uranium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/netherite/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:alloys/molten_atmunob, conditions not met
+[18:53:21] [INFO] Skipping recipe casualness_delight:crafting_shaped/toast_with_cheese, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/unobtainium_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/shard/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/fluorite/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/iron/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/electrum/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/invar/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/steel_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/bronze/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/netherite/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/silver/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/zinc/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/aluminum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/steel/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/uranium/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/peridot/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/blindness, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/platinum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/cloche/rice, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/enderium/dust/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/constantan/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_pick, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/fluorite/gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/bronze/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/sapphire/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/zinc/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/peridot/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_chestplate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/fluorite/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/aluminum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/regeneration, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/metalpress/pumpkin, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/bronze_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/enderium/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/fluorite/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/lead/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/tin/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/cloche/cabbage, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/aluminum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/vibranium/vibranium_from_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/sapphire/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/vibranium_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/clump/from_shard, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/platinum/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/gold/plate, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/slowness, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/zinc/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/electrum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/alloys/vibranium_allthemodium_alloy_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_beetroots, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/silver/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/diamond/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/lead/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/unobtainium/unobtainium_from_leggings, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/vibranium/slurry/clean, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/aluminum/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/zinc/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/silver/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_tomatoes, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/enderium/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lead/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/allthemodium/allthemodium_from_helmet, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/signalum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:sweet_berry_jelly_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:casting/alloys/unobtainium_vibranium_alloy_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/zinc/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/dust/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/constantan/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/signalum/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/zinc/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/steel/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/clump/from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/salvage/vibranium/vibranium_from_helmet, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/tin/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/nickel/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/uranium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloysmelter/constantan/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/peridot/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/slurry/dirty/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iron/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/create/mixing/cabbage_slice_from_mixing, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iridium/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/gold/crystal/from_slurry, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/iridium/from_rod, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/lumium/from_gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/enderium/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/shard/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/nickel/dust/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/unobtainium_from_raw_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/iridium/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe apotheosis:gateways/tiered/summit, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/silver/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe farmersdelight:integration/immersiveengineering/crusher/wild_onions, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/iridium/rod, conditions not met
+[18:53:21] [INFO] Skipping recipe expandeddelight:peanut_butter_honey_sandwich, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/dust/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe twilightforest:jeed/fire_resistance, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/silver/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/signalum/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/dirty_dust/from_clump, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:alloy_smelting/signalum_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/unobtainium/dust/from_dirty_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/copper/shard/from_crystal, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:melting/allthemodium_from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/aluminum/from_plate, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:processing/allthemodium/slurry/clean, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/cinnabar/from_dust, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/zinc/ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crushing/gold/from_ingot, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/lead/slurry/dirty/from_raw, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/platinum/slurry/from_dirty, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/zinc/clump/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/slurry/dirty/from_ore, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/peridot/dust/from_gem, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:metalpress/signalum/gear, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:processing/osmium/shard/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:sag_milling/lead/ore, conditions not met
+[18:53:21] [INFO] Skipping recipe allthemodium:tools/materials/allthemodium/allthemodium_from_nugget, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:arcfurnace/platinum/from_raw_block, conditions not met
+[18:53:21] [INFO] Skipping recipe sophisticatedbackpacks:chipped/mason_table_upgrade, conditions not met
+[18:53:21] [INFO] Skipping recipe alltheores:crusher/nickel/from_raw, conditions not met
+[18:53:21] [INFO] Found 4921 recipes in 581.6 ms
+[18:53:21] [INFO] Posted recipe events in 19 ms
+[18:53:21] [INFO] KubeJS modifications to recipe manager finished in 33.71 ms
+[18:53:21] [INFO] Added 8 recipes, removed 0 recipes, modified 0 recipes, with 0 failed recipes taking 773 ms in total
+[18:53:23] [INFO] Server resource reload complete!
+[18:53:48] [INFO] [爬塔系统] 处理实体死亡掉落时出错: dev.latvian.mods.kubejs.event.EventExit: result
+[18:53:48] [INFO] [爬塔系统] [DEBUG] 实体死亡检查 - 类型: minecraft:bat, 是塔内怪物: false
+[18:53:48] [INFO] [爬塔系统] [DEBUG] 实体不是塔内怪物，但已跳过检查，继续处理
+[18:53:48] [INFO] [爬塔系统] 检测到塔内怪物被击杀: minecraft:bat
+[18:53:48] [INFO] [爬塔系统] [DEBUG] 伤害来源类型: inWall
+[18:53:48] [INFO] [爬塔系统] [DEBUG] 伤害来源不是玩家，跳过击杀计数处理
