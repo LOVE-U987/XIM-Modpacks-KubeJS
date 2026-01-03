@@ -1,0 +1,187 @@
+// 村民交易系统配置示例
+// 复制此文件并重命名为 villager_trades_config.js 以使用自定义配置
+
+// 交易系统配置
+const TRADE_CONFIG = {
+    // 交易刷新间隔（游戏刻）
+    refreshInterval: 24000, // 1天
+    // 是否允许刷新已锁定的交易
+    allowRefreshingLockedTrades: false,
+    // 默认交易最大使用次数
+    defaultMaxUses: 12,
+    // 交易价格波动范围（百分比）
+    priceFluctuation: 0.1,
+    // 经济系统兼容性设置
+    economy: {
+        // 是否使用 emerald 作为默认货币
+        useEmeraldsAsCurrency: true,
+        // 自定义货币物品ID（如果不使用绿宝石）
+        customCurrency: null,
+        // 价格转换比率（如果使用自定义货币）
+        conversionRate: 1
+    }
+};
+
+// 村民职业与交易关联配置
+const VILLAGER_PROFESSIONS = {
+    // 农民
+    farmer: {
+        trades: [
+            // 层级1交易
+            {
+                level: 1,
+                trades: [
+                    {
+                        input: { item: "minecraft:wheat", count: 20 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 16,
+                        experience: 2
+                    },
+                    {
+                        input: { item: "minecraft:emerald", count: 1 },
+                        output: { item: "minecraft:bread", count: 4 },
+                        maxUses: 12,
+                        experience: 1
+                    }
+                ]
+            },
+            // 层级2交易
+            {
+                level: 2,
+                trades: [
+                    {
+                        input: { item: "minecraft:carrot", count: 15 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 12,
+                        experience: 2
+                    },
+                    {
+                        input: { item: "minecraft:potato", count: 15 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 12,
+                        experience: 2
+                    }
+                ]
+            },
+            // 层级3交易
+            {
+                level: 3,
+                trades: [
+                    {
+                        input: [
+                            { item: "minecraft:emerald", count: 2 },
+                            { item: "minecraft:wheat", count: 10 }
+                        ],
+                        output: { item: "minecraft:pumpkin_pie", count: 3 },
+                        maxUses: 8,
+                        experience: 5
+                    }
+                ]
+            }
+        ]
+    },
+    // 铁匠
+    blacksmith: {
+        trades: [
+            {
+                level: 1,
+                trades: [
+                    {
+                        input: { item: "minecraft:iron_ingot", count: 6 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 12,
+                        experience: 2
+                    },
+                    {
+                        input: [
+                            { item: "minecraft:emerald", count: 1 },
+                            { item: "minecraft:coal", count: 1 }
+                        ],
+                        output: { item: "minecraft:iron_sword", count: 1 },
+                        maxUses: 8,
+                        experience: 5
+                    }
+                ]
+            },
+            {
+                level: 2,
+                trades: [
+                    {
+                        input: [
+                            { item: "minecraft:emerald", count: 3 },
+                            { item: "minecraft:iron_ingot", count: 3 }
+                        ],
+                        output: { item: "minecraft:iron_axe", count: 1 },
+                        maxUses: 8,
+                        experience: 7
+                    }
+                ]
+            }
+        ]
+    },
+    // 牧师
+    cleric: {
+        trades: [
+            {
+                level: 1,
+                trades: [
+                    {
+                        input: { item: "minecraft:rotten_flesh", count: 32 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 12,
+                        experience: 2
+                    },
+                    {
+                        input: { item: "minecraft:emerald", count: 1 },
+                        output: { item: "minecraft:redstone", count: 4 },
+                        maxUses: 16,
+                        experience: 1
+                    }
+                ]
+            }
+        ]
+    },
+    // 自定义职业示例
+    custom_profession: {
+        trades: [
+            {
+                level: 1,
+                trades: [
+                    {
+                        input: { item: "kubejs:ruby", count: 3 },
+                        output: { item: "minecraft:emerald", count: 1 },
+                        maxUses: 12,
+                        experience: 3
+                    },
+                    {
+                        input: [
+                            { item: "minecraft:emerald", count: 5 },
+                            { item: "kubejs:sapphire", count: 2 }
+                        ],
+                        output: { item: "kubejs:energy_protocol", count: 1 },
+                        maxUses: 4,
+                        experience: 10
+                    }
+                ]
+            },
+            {
+                level: 2,
+                trades: [
+                    {
+                        input: [
+                            { item: "minecraft:emerald", count: 10 },
+                            { item: "kubejs:raw_residue", count: 5 }
+                        ],
+                        output: { item: "kubejs:soul_fragment", count: 1 },
+                        maxUses: 3,
+                        experience: 15
+                    }
+                ]
+            }
+        ]
+    }
+};
+
+// 配置示例文件 - 请复制此文件并重命名为 villager_trades_config.js
+// 然后根据需要修改交易配置
+// 注意：此文件不会被自动加载，需要手动复制并重命名后使用
