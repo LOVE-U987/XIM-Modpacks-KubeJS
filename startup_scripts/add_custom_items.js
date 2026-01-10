@@ -6,17 +6,45 @@
 // 配置：要添加的物品列表
 const ITEMS_TO_ADD = [
     {
-        id: "kubejs:raw_residue",
-        name: "原料残渣",
+        id: "kubejs:allthemodium_ingot",
+        name: "全能锭",
+        type: "EPIC",
+        maxStackSize: 64,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:allthemodium_upgrade_smithing_template",
+        name: "全能锭升级锻造模板",
+        type: "EPIC",
+        maxStackSize: 1,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:atm_star",
+        name: "ATM之星",
+        type: "EPIC",
+        maxStackSize: 1,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:example_item",
+        name: "示例物品",
         type: "basic",
         maxStackSize: 64,
         creativeTab: "minecraft:misc"
     },
     {
-        id: "kubejs:soul_fragment",
-        name: "灵魂者碎片",
+        id: "kubejs:fluorite",
+        name: "萤石",
         type: "basic",
         maxStackSize: 64,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:piglich_heart",
+        name: "猪灵之心",
+        type: "EPIC",
+        maxStackSize: 16,
         creativeTab: "minecraft:misc"
     },
     {
@@ -24,21 +52,49 @@ const ITEMS_TO_ADD = [
         name: "红宝石",
         type: "basic",
         maxStackSize: 64,
-        creativeTab: "minecraft:materials"
+        creativeTab: "minecraft:misc"
     },
     {
-        id: "kubejs:energy_protocol",
-        name: "能源协议",
-        type: "basic",
+        id: "kubejs:unobtainium_allthemodium_alloy_ingot",
+        name: "无尽全能合金锭",
+        type: "EPIC",
         maxStackSize: 64,
         creativeTab: "minecraft:misc"
     },
     {
-        id: "kubejs:sapphire",
-        name: "蓝宝石",
-        type: "basic",
+        id: "kubejs:unobtainium_ingot",
+        name: "无尽锭",
+        type: "EPIC",
         maxStackSize: 64,
-        creativeTab: "minecraft:materials"
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:unobtainium_upgrade_smithing_template",
+        name: "无尽升级锻造模板",
+        type: "EPIC",
+        maxStackSize: 1,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:unobtainium_vibranium_alloy_ingot",
+        name: "无尽振动合金锭",
+        type: "EPIC",
+        maxStackSize: 64,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:vibranium_allthemodium_alloy_ingot",
+        name: "振动全能合金锭",
+        type: "EPIC",
+        maxStackSize: 64,
+        creativeTab: "minecraft:misc"
+    },
+    {
+        id: "kubejs:vibranium_upgrade_smithing_template",
+        name: "振动升级锻造模板",
+        type: "EPIC",
+        maxStackSize: 1,
+        creativeTab: "minecraft:misc"
     }
 ];
 
@@ -81,11 +137,36 @@ StartupEvents.registry("item", function(event) {
             // 简化创建过程，不使用try-catch嵌套
             if (event && typeof event.create === 'function') {
                 // 直接调用create方法创建物品
-                event.create(itemConfig.id).displayName(itemConfig.name);
-                
-                // 记录成功
-                addResults.successful.push("物品: " + itemConfig.id + " (" + itemConfig.name + ")");
-                console.info("[KubeJS] 成功添加物品: " + itemConfig.id + " - " + itemConfig.name);
+            var itemBuilder = event.create(itemConfig.id).displayName(itemConfig.name);
+            
+            // 设置纹理
+            if (itemConfig.texture) {
+                itemBuilder.texture(itemConfig.texture);
+            }
+            
+            // 设置最大堆叠数量
+            if (itemConfig.maxStackSize) {
+                itemBuilder.maxStackSize(itemConfig.maxStackSize);
+            }
+            
+            // 设置稀有度
+            if (itemConfig.id === "kubejs:pokopoko_synthion_remix") {
+                // 特殊处理：为Synthion Remix设置EPIC稀有度
+                itemBuilder.rarity('EPIC');
+            } else {
+                // 根据类型设置稀有度
+                if (itemConfig.type === "EPIC") {
+                    itemBuilder.rarity('EPIC');
+                } else if (itemConfig.type === "basic") {
+                    itemBuilder.rarity('COMMON');
+                }
+            }
+            
+            // 移除了不支持的creativeTab方法
+            
+            // 记录成功
+            addResults.successful.push("物品: " + itemConfig.id + " (" + itemConfig.name + ")");
+            console.info("[KubeJS] 成功添加物品: " + itemConfig.id + " - " + itemConfig.name);
             } else {
                 // 记录错误
                 var errorMsg = itemConfig.id + " (" + itemConfig.name + ") - 错误: 事件对象没有create方法";
