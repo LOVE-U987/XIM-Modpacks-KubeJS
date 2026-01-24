@@ -1,0 +1,11 @@
+{
+    "records.pokopoko_synthion_remix": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "kubejs:sounds/pokopoko_synthion_remix",
+                "stream": true
+            }
+        ]
+    }
+}
