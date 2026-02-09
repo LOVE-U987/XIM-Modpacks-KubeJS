@@ -217,6 +217,31 @@ function applyMonsterScaling(mob, stats) {
         mob.maxHealth = newMax
         mob.health = newMax * ratio
     }
+    
+    const attackDamageAttr = mob.getAttribute('minecraft:generic.attack_damage')
+    if (attackDamageAttr) {
+        if (!data.contains('originalAttackDamage')) {
+            data.putDouble('originalAttackDamage', attackDamageAttr.getBaseValue())
+        }
+        const originalAttackDamage = data.getDouble('originalAttackDamage')
+        const newAttackDamage = originalAttackDamage * dm
+        if (Math.abs(attackDamageAttr.getBaseValue() - newAttackDamage) > 0.1) {
+            attackDamageAttr.setBaseValue(newAttackDamage)
+        }
+    }
+    
+    const armorAttr = mob.getAttribute('minecraft:generic.armor')
+    if (armorAttr) {
+        if (!data.contains('originalArmorAttr')) {
+            data.putDouble('originalArmorAttr', armorAttr.getBaseValue())
+        }
+        const originalArmorAttr = data.getDouble('originalArmorAttr')
+        const newArmor = originalArmorAttr * am
+        if (Math.abs(armorAttr.getBaseValue() - newArmor) > 0.1) {
+            armorAttr.setBaseValue(newArmor)
+        }
+    }
+    
     data.putDouble('healthMultiplier', hm)
     data.putDouble('armorMultiplier', am)
     data.putDouble('damageMultiplier', dm)
@@ -292,8 +317,10 @@ ServerEvents.commandRegistry(function(event) {
                         const key = StringArgumentType.getString(ctx, 'key')
                         const p   = ctx.source.player
                         if (CONFIG.hasOwnProperty(key)) {
+                            //为配置显示项添加emoji美化，保持界面一致性
                             if (p) p.tell(Component.literal(`📋 ${key} = ${CONFIG[key]}`))
                         } else {
+                            //为错误提示信息添加emoji美化
                             if (p) p.tell(Component.literal(`❌ 无效的配置项: ${key}`))
                         }
                         return 1
@@ -303,10 +330,11 @@ ServerEvents.commandRegistry(function(event) {
             .executes(ctx => {
                 const p = ctx.source.player
                 if (p) {
-                    p.tell(Component.literal('§3用法：'))
-                    p.tell(Component.literal('§b/difficulty_config set <key> <value>'))
-                    p.tell(Component.literal('§b/difficulty_config get <key>'))
-                    p.tell(Component.literal('§7示例：§f/difficulty_config set MAX_HEALTH_MULTIPLIER 6.0'))
+                    //为命令提示添加emoji美化，提升界面美观度
+                    p.tell(Component.literal('📖 §3用法：'))
+                    p.tell(Component.literal('✏️ §b/difficulty_config set <key> <value>'))
+                    p.tell(Component.literal('🔍 §b/difficulty_config get <key>'))
+                    p.tell(Component.literal('💡 §7示例：§f/difficulty_config set MAX_HEALTH_MULTIPLIER 6.0'))
                 }
                 return 1
             })
@@ -318,12 +346,13 @@ ServerEvents.commandRegistry(function(event) {
             .executes(ctx => {
                 const p = ctx.source.player
                 if (p) {
-                    p.tell(Component.literal('§e§m          §e[ §6§l动态难度帮助 §e]§e§m          '))
-                    p.tell(Component.literal('§b/diffhelp §7- 查看这条帮助'))
-                    p.tell(Component.literal('§b/diffgui §7- 打开图形菜单'))
-                    p.tell(Component.literal('§b/difficulty_config set/get §7- 在线改/查配置'))
-                    p.tell(Component.literal('§b/difficulty_debug §7- 调试管理'))
-                    p.tell(Component.literal('§b/debug_stats §7- 查看自己属性与附近怪物强化'))
+                    //为帮助界面标题和命令提示添加emoji，提升界面美观度
+                    p.tell(Component.literal('§e§m          §e[ §6§l🚩动态难度帮助🚩 §e]§e§m          '))
+                    p.tell(Component.literal('📚 §b/diffhelp §7- 查看这条帮助'))
+                    p.tell(Component.literal('🖥️ §b/diffgui §7- 打开图形菜单'))
+                    p.tell(Component.literal('⚙️ §b/difficulty_config set/get §7- 在线改/查配置'))
+                    p.tell(Component.literal('🔧 §b/difficulty_debug §7- 调试管理'))
+                    p.tell(Component.literal('📊 §b/debug_stats §7- 查看自己属性与附近怪物强化'))
                 }
                 return 1
             })
@@ -335,7 +364,7 @@ ServerEvents.commandRegistry(function(event) {
             .executes(ctx => {
                 const p = ctx.source.player
                 if (!p) return 1
-                p.tell(Component.literal('§e§m          §e[ §6§l动态难度控制中心 §e]§e§m          '))
+                p.tell(Component.literal('§e§m          §e[ §6§l🚩动态难度控制中心🚩 §e]§e§m          '))
                 p.tell(
                     Component.literal('  §a▶ §b点击查看我的属性')
                         .setStyle(Component.empty().style
@@ -353,6 +382,18 @@ ServerEvents.commandRegistry(function(event) {
                         .setStyle(Component.empty().style
                             .withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, '/difficulty_config'))
                             .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.literal('§7无需翻文件，在线改倍率'))))
+                )
+                p.tell(
+                    Component.literal('  §a▶ §c怪物血量倍率')
+                        .setStyle(Component.empty().style
+                            .withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, '/phm'))
+                            .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.literal('§7自定义怪物血量倍率'))))
+                )
+                p.tell(
+                    Component.literal('  §a▶ §6怪物攻击倍率')
+                        .setStyle(Component.empty().style
+                            .withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, '/pdm'))
+                            .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.literal('§7自定义怪物攻击倍率'))))
                 )
                 p.tell(
                     Component.literal('  §c▶ §8关闭菜单')
@@ -376,12 +417,15 @@ ServerEvents.commandRegistry(function(event) {
                 const toughness = calculatePlayerToughness(p)
                 const spellPower= calculatePlayerSpellPower(p)
                 const combined  = (precision + armor + toughness + spellPower) / 4
-                p.tell(Component.literal('=== §6玩家属性统计§f ==='))
-                p.tell(Component.literal(`装备精度: ${precision.toFixed(2)}`))
-                p.tell(Component.literal(`护甲值: ${armor.toFixed(2)}`))
-                p.tell(Component.literal(`韧性值: ${toughness.toFixed(2)}`))
-                p.tell(Component.literal(`法术强度: ${spellPower.toFixed(2)}`))
-                p.tell(Component.literal(`综合强度: ${combined.toFixed(2)}`))
+                p.tell(Component.literal('=== §6⚔️玩家属性统计⚔️§f ==='))
+                p.tell(Component.literal(`🎯 装备精度: ${precision.toFixed(2)}`))
+                p.tell(Component.literal(`🛡️ 护甲值: ${armor.toFixed(2)}`))
+                //为韧性值添加emoji符号，保持与其他属性显示的一致性
+                p.tell(Component.literal(`� 韧性值: ${toughness.toFixed(2)}`))
+                //为法术强度添加emoji符号，保持与其他属性显示的一致性
+                p.tell(Component.literal(`🔮 法术强度: ${spellPower.toFixed(2)}`))
+                //为综合强度添加emoji符号，保持与其他属性显示的一致性
+                p.tell(Component.literal(`⚔️ 综合强度: ${combined.toFixed(2)}`))
 
                 // 附近强化怪物
                 const level     = p.level
@@ -394,12 +438,14 @@ ServerEvents.commandRegistry(function(event) {
                     const data = e.persistentData
                     if (data.contains('healthMultiplier')) {
                         const hm   = data.getDouble('healthMultiplier')
+                        const dm   = data.contains('damageMultiplier') ? data.getDouble('damageMultiplier') : 1.0
+                        const am   = data.contains('armorMultiplier') ? data.getDouble('armorMultiplier') : 1.0
                         const type = data.contains('scalingType') ? data.getString('scalingType') : '未知'
-                        p.tell(Component.literal(`${e.name.string}: ${type} 生命x${hm.toFixed(2)}`))
+                        p.tell(Component.literal(`👹 ${e.name.string}: ${type} 生命x${hm.toFixed(2)} 攻击x${dm.toFixed(2)} 护甲x${am.toFixed(2)}`))
                         count++
                     }
                 })
-                if (count === 0) p.tell(Component.literal('附近没有已强化的怪物'))
+                if (count === 0) p.tell(Component.literal('🔍 附近没有已强化的怪物'))
                 return 1
             })
     )
@@ -450,12 +496,17 @@ ServerEvents.commandRegistry(function(event) {
             .then(Commands.literal('config').executes(ctx => {
                 const p = ctx.source.player
                 if (p) {
+                    //为配置显示界面添加emoji美化，保持界面一致性
                     p.tell(Component.literal('⚙️ 当前配置：'))
                     p.tell(Component.literal(`📏 检测半径: ${CONFIG.DETECTION_RADIUS} 格`))
                     p.tell(Component.literal(`❤️ 最大生命倍率: x${CONFIG.MAX_HEALTH_MULTIPLIER}`))
                     p.tell(Component.literal(`🛡️ 最大护甲倍率: x${CONFIG.MAX_ARMOR_MULTIPLIER}`))
                     p.tell(Component.literal(`⚔️ 最大伤害倍率: x${CONFIG.MAX_DAMAGE_MULTIPLIER}`))
                     p.tell(Component.literal(`⏱️ 更新频率: ${CONFIG.UPDATE_FREQUENCY} ticks`))
+                    p.tell(Component.literal(''))
+                    p.tell(Component.literal('🎮 玩家自定义命令：'))
+                    p.tell(Component.literal(`   /phm - 怪物血量倍率`))
+                    p.tell(Component.literal(`   /pdm - 怪物攻击倍率`))
                 }
                 return 1
             }))
@@ -472,11 +523,11 @@ ServerEvents.commandRegistry(function(event) {
                 const p = ctx.source.player
                 if (p) {
                     p.tell(Component.literal('🔧 动态难度调试命令：'))
-                    p.tell(Component.literal('/difficulty_debug console on/off - 控制台调试'))
-                    p.tell(Component.literal('/difficulty_debug chat on/off - 聊天栏调试'))
-                    p.tell(Component.literal('/difficulty_debug config - 查看配置'))
-                    p.tell(Component.literal('/difficulty_debug status - 查看状态'))
-                    p.tell(Component.literal('/debug_stats - 查看玩家属性'))
+                    p.tell(Component.literal('🖥️ /difficulty_debug console on/off - 控制台调试'))
+                    p.tell(Component.literal('💬 /difficulty_debug chat on/off - 聊天栏调试'))
+                    p.tell(Component.literal('⚙️ /difficulty_debug config - 查看配置'))
+                    p.tell(Component.literal('📊 /difficulty_debug status - 查看状态'))
+                    p.tell(Component.literal('👤 /debug_stats - 查看玩家属性'))
                 }
                 return 1
             })

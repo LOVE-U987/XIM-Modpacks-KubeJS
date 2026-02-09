@@ -10,9 +10,9 @@ ItemEvents.rightClicked(function(event) {
         // 消耗一个物品
         itemStack.count--;
         
-        // 生成24到88之间的随机经验值
-        var minExp = 500;
-        var maxExp = 1000;
+        // 生成1500到2500之间的随机经验值
+        var minExp = 1500;
+        var maxExp = 2500;
         var exp = Math.floor(Math.random() * (maxExp - minExp + 1)) + minExp;
         
         // 给玩家添加经验（使用MC原版方法）

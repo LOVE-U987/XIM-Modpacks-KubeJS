@@ -339,9 +339,10 @@ ServerEvents.commandRegistry(function(event) {
                 var player = source.player;
                 
                 if (player) {
-                    player.tell(Component.literal('§e§m          §e[ §6§l玩家自定义怪物血量倍数 §e]§e§m          '));
-                    player.tell(Component.literal('§b/phm get §7- 查看当前怪物血量倍率'));
-                    player.tell(Component.literal('§b/phm set <倍率> §7- 设置怪物血量倍率（0.1-10.0）'));
+                    //为怪物血量简化命令别名添加emoji警告符号，提升视觉效果
+                    player.tell(Component.literal('§e§m          §e[ §6§l🚩玩家自定义怪物血量倍数🚩 §e]§e§m          '));
+                    player.tell(Component.literal('⚠️§b/phm get §7- 查看当前怪物血量倍率'));
+                    player.tell(Component.literal('⚠️§b/phm set <倍率> §7- 设置怪物血量倍率（0.1-10.0）')); 
                 }
                 
                 return 1;
@@ -358,10 +359,10 @@ ServerEvents.commandRegistry(function(event) {
                 if (player) {
                     var currentMultiplier = phmGetPlayerMultiplier(player);
                     
-                    player.tell(Component.literal('§e§m          §e[ §6§l玩家自定义怪物血量倍数 §e]§e§m          '));
-                    player.tell(Component.literal('§b当前倍率: §f x' + currentMultiplier.toFixed(2)));
-                    player.tell(Component.literal('§b使用 §f/phm set <倍率> §b来修改'));
-                    player.tell(Component.literal('§b允许范围: §f ' + PHM_CONFIG.MIN_MULTIPLIER + ' - ' + PHM_CONFIG.MAX_MULTIPLIER));
+                    player.tell(Component.literal('§e§m          §e[ §6§l🚩玩家自定义怪物血量倍数🚩 §e]§e§m          '));
+                    player.tell(Component.literal('❗§b当前倍率: §f x' + currentMultiplier.toFixed(2)));
+                    player.tell(Component.literal('❗§b使用 §f/phm set <倍率> §b来修改'));
+                    player.tell(Component.literal('❗§b允许范围: §f ' + PHM_CONFIG.MIN_MULTIPLIER + ' - ' + PHM_CONFIG.MAX_MULTIPLIER));
                 }
                 
                 return 1;

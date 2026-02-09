@@ -1,112 +1,106 @@
-// 玩家自定义怪物护甲值倍数系统 - 精简版
-// 实现 /armorm get 和 /armorm set 命令
+// 玩家自定义怪物攻击倍数系统
+// 类似 player_health_multiplier.js，但用于控制怪物的攻击伤害
 
 // ========== 配置 ==========
-const PAM_CONFIG = {
+const PDM_CONFIG = {
     DEFAULT_MULTIPLIER: 1.0,
     MIN_MULTIPLIER: 0.1,
     MAX_MULTIPLIER: 100.0,
-    PERMISSION_NODE: 'difficulty.player_armor_multiplier',
-    STORAGE_PATH: 'kubejs/player_armor_multipliers.json'
+    PERMISSION_NODE: 'difficulty.player_damage_multiplier',
+    STORAGE_PATH: 'kubejs/player_damage_multipliers.json'
 };
 
-// 玩家护甲倍率存储
-var playerArmorMultipliers = {};
+// 玩家攻击倍率存储
+var playerDamageMultipliers = {};
 
 // ========== 核心函数 ==========
 
 /**
  * 检查玩家是否具有权限
  */
-function pamHasPermission(player) {
+function pdmHasPermission(player) {
     if (!player || player.isOp()) {
         return true;
     }
-    return player.hasPermission(PAM_CONFIG.PERMISSION_NODE);
+    return player.hasPermission(PDM_CONFIG.PERMISSION_NODE);
 }
 
 /**
- * 加载玩家护甲倍率配置
+ * 加载玩家攻击倍率配置
  */
-function pamLoadPlayerMultipliers() {
+function pdmLoadPlayerMultipliers() {
     try {
         const fs = require('fs');
         const path = require('path');
-        const filePath = path.join(global.server.configDir, PAM_CONFIG.STORAGE_PATH);
+        const filePath = path.join(global.server.configDir, PDM_CONFIG.STORAGE_PATH);
         
         if (fs.existsSync(filePath)) {
             const content = fs.readFileSync(filePath, 'utf8');
             const data = JSON.parse(content);
-            playerArmorMultipliers = {};
+            playerDamageMultipliers = {};
             for (var uuid in data) {
                 if (data.hasOwnProperty(uuid)) {
-                    playerArmorMultipliers[uuid] = parseFloat(data[uuid]);
+                    playerDamageMultipliers[uuid] = parseFloat(data[uuid]);
                 }
             }
         }
     } catch (error) {
-        console.log('[PAM] 加载配置失败: ' + error.message);
+        console.log('[PDM] 加载配置失败: ' + error.message);
     }
 }
 
 /**
- * 保存玩家护甲倍率配置
+ * 保存玩家攻击倍率配置
  */
-function pamSavePlayerMultipliers() {
+function pdmSavePlayerMultipliers() {
     try {
         const fs = require('fs');
         const path = require('path');
-        const filePath = path.join(global.server.configDir, PAM_CONFIG.STORAGE_PATH);
+        const filePath = path.join(global.server.configDir, PDM_CONFIG.STORAGE_PATH);
         
         const dirPath = path.dirname(filePath);
         if (!fs.existsSync(dirPath)) {
             fs.mkdirSync(dirPath, { recursive: true });
         }
         
-        fs.writeFileSync(filePath, JSON.stringify(playerArmorMultipliers, null, 2), 'utf8');
+        fs.writeFileSync(filePath, JSON.stringify(playerDamageMultipliers, null, 2), 'utf8');
     } catch (error) {
-        console.log('[PAM] 保存配置失败: ' + error.message);
+        console.log('[PDM] 保存配置失败: ' + error.message);
     }
 }
 
 /**
- * 获取玩家的护甲倍率
+ * 获取玩家的攻击倍率
  */
-function pamGetPlayerMultiplier(player) {
-    if (!player) return PAM_CONFIG.DEFAULT_MULTIPLIER;
+function pdmGetPlayerMultiplier(player) {
+    if (!player) return PDM_CONFIG.DEFAULT_MULTIPLIER;
     
     const uuid = player.uuid.toString();
-    return playerArmorMultipliers[uuid] || PAM_CONFIG.DEFAULT_MULTIPLIER;
+    return playerDamageMultipliers[uuid] || PDM_CONFIG.DEFAULT_MULTIPLIER;
 }
 
 /**
- * 设置玩家的护甲倍率
+ * 设置玩家的攻击倍率
  */
-function pamSetPlayerMultiplier(player, multiplier) {
+function pdmSetPlayerMultiplier(player, multiplier) {
     if (!player) return false;
     
-    const clampedMultiplier = Math.max(PAM_CONFIG.MIN_MULTIPLIER, Math.min(PAM_CONFIG.MAX_MULTIPLIER, multiplier));
+    const clampedMultiplier = Math.max(PDM_CONFIG.MIN_MULTIPLIER, Math.min(PDM_CONFIG.MAX_MULTIPLIER, multiplier));
     
     const uuid = player.uuid.toString();
-    playerArmorMultipliers[uuid] = clampedMultiplier;
+    playerDamageMultipliers[uuid] = clampedMultiplier;
     
     // 保存配置
-    pamSavePlayerMultipliers();
+    pdmSavePlayerMultipliers();
     
     return true;
 }
 
 /**
- * 应用玩家自定义护甲倍率到怪物
+ * 应用玩家自定义攻击倍率到怪物
  */
-function pamApplyPlayerMultiplier(entity) {
+function pdmApplyPlayerMultiplier(entity) {
     if (!entity || !entity.isAlive() || entity.isPlayer()) {
-        return;
-    }
-    
-    // 获取护甲属性
-    var armorAttr = entity.getAttribute('minecraft:generic.armor');
-    if (!armorAttr) {
         return;
     }
     
@@ -149,20 +143,25 @@ function pamApplyPlayerMultiplier(entity) {
     }
     
     // 应用倍率
-    var multiplier = pamGetPlayerMultiplier(closestPlayer);
+    var multiplier = pdmGetPlayerMultiplier(closestPlayer);
     var data = entity.persistentData;
     
-    if (!data.contains('pam_originalArmor')) {
-        // 保存原始护甲值
-        data.putDouble('pam_originalArmor', armorAttr.getBaseValue());
+    // 获取攻击伤害属性
+    var attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage');
+    if (!attackDamageAttr) {
+        return;
     }
     
-    var originalArmor = data.getDouble('pam_originalArmor');
-    var newArmor = originalArmor * multiplier;
+    if (!data.contains('pdm_originalAttackDamage')) {
+        data.putDouble('pdm_originalAttackDamage', attackDamageAttr.getBaseValue());
+    }
     
-    // 只有当变化超过阈值时才更新，避免频繁刷新
-    if (Math.abs(armorAttr.getBaseValue() - newArmor) > 0.1) {
-        armorAttr.setBaseValue(newArmor);
+    var originalAttackDamage = data.getDouble('pdm_originalAttackDamage');
+    var newAttackDamage = originalAttackDamage * multiplier;
+    
+    // 只有当变化超过阈值时才更新
+    if (Math.abs(attackDamageAttr.getBaseValue() - newAttackDamage) > 0.1) {
+        attackDamageAttr.setBaseValue(newAttackDamage);
     }
 }
 
@@ -172,8 +171,8 @@ function pamApplyPlayerMultiplier(entity) {
  * 服务器加载完成事件
  */
 ServerEvents.loaded(function(event) {
-    pamLoadPlayerMultipliers();
-    console.log('[PAM] 玩家自定义怪物护甲值倍数系统已加载完成！');
+    pdmLoadPlayerMultipliers();
+    console.log('[PDM] 玩家自定义怪物攻击倍数系统已加载完成！');
 });
 
 /**
@@ -202,15 +201,15 @@ EntityEvents.spawned(function(event) {
             break;
         }
     }
-    
+
     if (skip) {
         return;
     }
-    
+
     try {
-        pamApplyPlayerMultiplier(entity);
+        pdmApplyPlayerMultiplier(entity);
     } catch (error) {
-        console.log('[PAM] 应用玩家护甲倍率失败: ' + error.message);
+        console.log('[PDM] 应用玩家攻击倍率失败: ' + error.message);
     }
 });
 
@@ -247,9 +246,9 @@ EntityEvents.spawned(function(event) {
         }
         
         try {
-            pamApplyPlayerMultiplier(entity);
+            pdmApplyPlayerMultiplier(entity);
         } catch (error) {
-            console.log('[PAM] 应用玩家护甲倍率失败: ' + error.message);
+            console.log('[PDM] 应用玩家攻击倍率失败: ' + error.message);
         }
     });
 });
@@ -263,9 +262,9 @@ ServerEvents.commandRegistry(function(event) {
     var DoubleArgumentType = Java.loadClass('com.mojang.brigadier.arguments.DoubleArgumentType');
     var Component = Java.loadClass('net.minecraft.network.chat.Component');
     
-    // ========== 玩家命令: /armorm ==========
+    // ========== 玩家命令: /pdm ==========
     event.register(
-        Commands.literal('armorm')
+        Commands.literal('pdm')
             // 查看当前倍率
             .then(Commands.literal('get')
                 .executes(function(ctx) {
@@ -277,10 +276,10 @@ ServerEvents.commandRegistry(function(event) {
                         return 1;
                     }
                     
-                    var currentMultiplier = pamGetPlayerMultiplier(player);
+                    var currentMultiplier = pdmGetPlayerMultiplier(player);
                     
-                    player.tell(Component.literal('📊 当前怪物护甲倍率: x' + currentMultiplier.toFixed(2)));
-                    player.tell(Component.literal('📏 允许范围: ' + PAM_CONFIG.MIN_MULTIPLIER + ' - ' + PAM_CONFIG.MAX_MULTIPLIER));
+                    player.tell(Component.literal('📊 当前怪物攻击倍率: x' + currentMultiplier.toFixed(2)));
+                    player.tell(Component.literal('📏 允许范围: ' + PDM_CONFIG.MIN_MULTIPLIER + ' - ' + PDM_CONFIG.MAX_MULTIPLIER));
                     
                     return 1;
                 })
@@ -299,22 +298,21 @@ ServerEvents.commandRegistry(function(event) {
                         }
                         
                         // 权限检查
-                        if (!pamHasPermission(player)) {
+                        if (!pdmHasPermission(player)) {
                             player.tell(Component.literal('❌ 你没有权限使用此命令！'));
                             return 1;
                         }
                         
                         // 检查倍率范围
-                        if (multiplier < PAM_CONFIG.MIN_MULTIPLIER || multiplier > PAM_CONFIG.MAX_MULTIPLIER) {
-                            player.tell(Component.literal('❌ 倍率必须在 ' + PAM_CONFIG.MIN_MULTIPLIER + ' - ' + PAM_CONFIG.MAX_MULTIPLIER + ' 之间！'));
+                        if (multiplier < PDM_CONFIG.MIN_MULTIPLIER || multiplier > PDM_CONFIG.MAX_MULTIPLIER) {
+                            player.tell(Component.literal('❌ 倍率必须在 ' + PDM_CONFIG.MIN_MULTIPLIER + ' - ' + PDM_CONFIG.MAX_MULTIPLIER + ' 之间！'));
                             return 1;
                         }
                         
                         // 设置倍率
-                        var clampedMultiplier = pamGetPlayerMultiplier(player);
-                        pamSetPlayerMultiplier(player, multiplier);
+                        pdmSetPlayerMultiplier(player, multiplier);
                         
-                        player.tell(Component.literal('✅ 怪物护甲倍率已设置为: x' + clampedMultiplier.toFixed(2)));
+                        player.tell(Component.literal('✅ 怪物攻击倍率已设置为: x' + multiplier.toFixed(2)));
                         player.tell(Component.literal('💡 新生成的怪物将应用此倍率！'));
                         
                         return 1;
@@ -327,10 +325,9 @@ ServerEvents.commandRegistry(function(event) {
                 var player = source.player;
                 
                 if (player) {
-                    //为怪物护甲简化命令别名添加emoji警告符号，提升视觉效果
-                    player.tell(Component.literal('§e§m          §e[ §6§l🚩玩家自定义怪物护甲值倍数🚩 §e]§e§m          '));
-                    player.tell(Component.literal('⚠️§b/armorm get §7- 查看当前怪物护甲倍率'));
-                    player.tell(Component.literal('⚠️§b/armorm set <倍率> §7- 设置怪物护甲倍率（0.1-100.0）')); 
+                    player.tell(Component.literal('§e§m          §e[ §6§l🗡️玩家自定义怪物攻击倍数🗡️ §e]§e§m          '));
+                    player.tell(Component.literal('⚔️§b/pdm get §7- 查看当前怪物攻击倍率'));
+                    player.tell(Component.literal('⚔️§b/pdm set <倍率> §7- 设置怪物攻击倍率（0.1-100.0）')); 
                 }
                 
                 return 1;
@@ -339,20 +336,18 @@ ServerEvents.commandRegistry(function(event) {
     
     // 简化命令别名
     event.register(
-        Commands.literal('怪物护甲')
+        Commands.literal('怪物攻击')
             .executes(function(ctx) {
                 var source = ctx.source;
                 var player = source.player;
                 
                 if (player) {
-                    //为怪物护甲简化命令别名添加emoji警告符号，提升视觉效果
-                    player.tell(Component.literal('§e§m          §e[ §6§l🚩玩家自定义怪物护甲值倍数🚩 §e]§e§m          '));
-                    var currentMultiplier = pamGetPlayerMultiplier(player);
+                    var currentMultiplier = pdmGetPlayerMultiplier(player);
                     
-                    //为怪物护甲简化命令别名添加emoji警告符号，提升视觉效果
-                    player.tell(Component.literal('⚠️§b当前倍率: §f x' + currentMultiplier.toFixed(2)));
-                    player.tell(Component.literal('⚠️§b使用 §f/armorm set <倍率> §b来修改'));
-                    player.tell(Component.literal('⚠️§b允许范围: §f ' + PAM_CONFIG.MIN_MULTIPLIER + ' - ' + PAM_CONFIG.MAX_MULTIPLIER));    
+                    player.tell(Component.literal('§e§m          §e[ §6§l🗡️玩家自定义怪物攻击倍数🗡️ §e]§e§m          '));
+                    player.tell(Component.literal('⚔️§b当前倍率: §f x' + currentMultiplier.toFixed(2)));
+                    player.tell(Component.literal('⚔️§b使用 §f/pdm set <倍率> §b来修改'));
+                    player.tell(Component.literal('⚔️§b允许范围: §f ' + PDM_CONFIG.MIN_MULTIPLIER + ' - ' + PDM_CONFIG.MAX_MULTIPLIER));
                 }
                 
                 return 1;

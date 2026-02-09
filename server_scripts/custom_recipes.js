@@ -226,5 +226,18 @@ ServerEvents.recipes(event => {
             A: 'minecraft:experience_bottle',
             C: 'kubejs:fluorite'
         }
+    ),
+    event.shaped(
+        Item.of('minecraft:experience_bottle', 6),
+        [
+            'ABA',
+            'ACA',
+            'BCB'
+        ],
+        {
+            A: 'minecraft:emerald',
+            B: 'irons_spellbooks:arcane_essence',
+            C: 'minecraft:glass_bottle'
+        }
     )
 })

@@ -1,9 +1,0 @@
-// 为沙漠金字塔添加苹果战利品
-LootJS.lootTables(event => {// 为沙漠金字塔添加苹果战利品
-    event// 事件
-        .getLootTable("minecraft:chests/desert_pyramid")// 沙漠金字塔的战利品表
-        .firstPool()// 第一个池
-        .addEntry(LootEntry.of("minecraft:apple")// 添加苹果
-        .withWeight(20)// 权重20
-        .setCount([2, 5]))// 数量2-5个
-})
